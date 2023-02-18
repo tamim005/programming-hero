@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- option 2  use korbo -->
+    <button onclick="makeWhite()">Make normal</button>
+    <script>
+        function makeWhite(){
+            document.body.style.backgroundColor = "white";
+            
+        }
+        </script>
+        <!-- option 4 part3 use korbo -->
+        <button id="make-orange">Make orange</button>
+        <script>
+            document.getElementById("make-orange").addEventListener("click",function(){
+                document.body.style.backgroundColor = "orange"
+            }) 
+        </script>
+
+  <!-- option 4 tamon use korbo na-->
+  <button id="make-pink">Make pink</button>
+  <script>
+      const pinkButton =document.getElementById("make-pink");
+      pinkButton.addEventListener("click", makePink)
+      function makePink(){
+          document.body.style.backgroundColor = "pink"
+      }
+  </script>
+
+  <!-- option 4 part2 tamon use korbo na-->
+  <button id="make-green">make green</button>
+  <script>
+      const greenButton = document.getElementById('make-green')
+      greenButton.addEventListener("click", function makeGreen(){
+          document.body.style.backgroundColor = "green";
+      })
+  </script>
+
+
+
+    
+    
+    
+
+
+
+
+
+
+<!-- option 3 part 1 tamon use korbo na-->
+<button id="make-black">Make black</button>
+<script>
+    const BlackButton = document.getElementById('make-black');
+    BlackButton.onclick = makeBlack;
+    function makeBlack(){
+        document.body.style.backgroundColor = "black";
+    }
+    </script>
+
+<!-- option 3 part 2 tamon use korbo na-->
+<button id="make-red">make red</button>
+<script>
+    const redButton = document.getElementById("make-red");
+    redButton.onclick = function makeRed(){
+        document.body.style.backgroundColor = "red";
+    }
+    </script>
+
+
+<!--option 1  aita use korbo na -->
+<button onclick="document.body.style.backgroundColor='aqua'">Make aqua</button>
+
+
+</body>
+</html>

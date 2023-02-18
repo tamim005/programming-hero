@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        .fruits-container li{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>dom means = document object model.ai dom er maddome javascript html ke object moto kore falay.</h1> -->
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugiat saepe voluptate expedita quas, incidunt iste rerum alias ut! Maxime eveniet ratione neque adipisci voluptatem quas at nobis, reprehenderit quis!</p>
+    </header>
+    <main>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random class blue-class">Fruits i like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section class="place-container">
+            <h1>Place i like</h1>
+            <ul>
+                <li>Thiland</li>
+                <li>japan</li>
+                <li>canada</li>
+            </ul>
+        </section>
+    </main>
+    <script> 
+    const someli = document.querySelectorAll(".fruits-container li");
+     console.log(someli);
+   /*  for(const li of someli){
+        // console.log(someli)
+        console.log(li.innerText);
+    } */
+    const someMoreLI = document.querySelector(".place-container li");
+    console.log(someMoreLI)
+    </script>    
+</body>
+</html>
